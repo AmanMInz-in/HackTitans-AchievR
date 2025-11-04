@@ -10,8 +10,7 @@ const activitySchema = new mongoose.Schema({
     index: true
   },
   activityId: { 
-    type: String, 
-    unique: true,
+    type: String,
     sparse: true,
     index: true
   },
@@ -59,12 +58,12 @@ const activitySchema = new mongoose.Schema({
     _id: false,
     filename: {
       type: String,
-      required: true
+      required: false
     },
     url: String,
     path: {
       type: String,
-      required: true
+      required: false
     },
     fileSize: Number,
     fileType: String,
